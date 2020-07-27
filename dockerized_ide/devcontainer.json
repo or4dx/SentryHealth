@@ -1,0 +1,26 @@
+{
+    "name": "Node.js Sample",
+    "dockerFile": "Dockerfile",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+		"dbaeumer.vscode-eslint",
+		"swellaby.node-pack",
+		"prashaantt.node-tdd",
+		"eg2.vscode-npm-script",
+		"christian-kohler.npm-intellisense",
+		"visualstudioexptteam.vscodeintellicode",
+		"christian-kohler.path-intellisense"
+	],
+    "forwardPorts": [3000],
+    "postCreateCommand": "yarn install",
+    "remoteUser": "node"
+
+}
+
+
+
+
+
+

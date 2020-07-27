@@ -1,0 +1,17 @@
+apiVersion: app/v1
+kind:apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: palindrome-app
+  labels:
+    app: palindrome-app
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        editor: vscode
+    spec:
+      containers:
+      - name: palindrome-app
+        image: Image specified when dockerfile is built
